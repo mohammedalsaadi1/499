@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header, footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.hero {
+    text-align: center;
+    background: linear-gradient(rgba(227, 101, 101, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 4rem 2rem;
+}
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.hero .btn {
+    background-color: #df3030a9;
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.hero .btn:hover {
+    background-color: #fefefe;
+}
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+.section {
+    padding: 3rem 1rem;
+}
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.course-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.course-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+.course-item h3 {
+    margin-top: 0;
+    color: #004080;
+}
+.course-item p {
+    color: #666;
+}
+.course-item button {
+    background-color: #004080;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.course-item button:hover {
+    background-color: #003366;
+}
+
+/* Add focus styles for accessibility */
+button:focus {
+    outline: 2px solid #004080;
+    outline-offset: 2px;
+}
